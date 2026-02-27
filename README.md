@@ -1,0 +1,4 @@
+live demo: https://github.com/Ibukunz/trueminds-assignment-ibukun
+
+I built a responsive static website for "Chuks Kitchen," a Nigerian food delivery service, based on the provided Figma design screenshots. The site replicates the key screens: Home, Login, Sign Up, Menu (Explore), Product Detail, Delivery Details, Order Summary, and Payment. It represents an authentic Nigerian meal ordering platform where users can browse menus, sign up/log in, enter delivery info, view order summaries, and make payments.The site is static (no backend or JS interactivity beyond basic form placeholders), focusing on layout, visual hierarchy, and responsiveness. It uses HTML for structure, CSS for styling and responsiveness.Tech Stack Used:Languages: HTML5, CSS3
+Frameworks/Tools: None (vanilla). I used Flexbox and Grid for layout, Media Queries for responsiveness. No external libraries or tools like Bootstrap to keep it simple and focused on core skills.

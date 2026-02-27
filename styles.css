@@ -1,0 +1,331 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #333;
+  background: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #fff;
+}
+
+.logo {
+  font-family: cursive;
+  color: #ff7f00;
+  font-size: 1.5em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.login-btn {
+  background: #ff7f00;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  background: #5c3d2e;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer section {
+  margin: 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.up-arrow {
+  background: #00aaff;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Hero/Home */
+.hero {
+  display: flex;
+  background: #ffdab9;
+  padding: 50px;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-left img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.hero-right h1 {
+  color: #333;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  background: #ffe4b5;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.start-order {
+  background: #ff7f00;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+}
+
+.learn-more {
+  background: #fff;
+  color: #00aaff;
+  padding: 10px 20px;
+  border: 1px solid #00aaff;
+}
+
+/* Forms (Login/Signup) */
+.form-container {
+  display: flex;
+  height: 80vh;
+}
+
+.form-left {
+  flex: 1;
+  background: #ffdab9;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-right {
+  flex: 1;
+  padding: 50px;
+  background: #fff;
+}
+
+form input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.continue-btn {
+  background: #ff7f00;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  border: none;
+}
+
+/* Menu */
+.menu-header {
+  background: url("images/hero-menu.jpg") center/cover;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+.category-select {
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.menu-item {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Product Detail */
+.product-detail {
+  display: flex;
+  padding: 20px;
+}
+
+.product-img {
+  flex: 1;
+}
+
+.product-info {
+  flex: 1;
+  padding: 20px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Order Summary */
+.summary {
+  padding: 50px;
+  max-width: 400px;
+  margin: auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.summary input {
+  width: 70%;
+}
+
+.summary button {
+  width: 30%;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.delivery-pickup {
+  display: flex;
+  margin: 20px 0;
+}
+
+.delivery-pickup button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+}
+
+.delivery-pickup .active {
+  background: #ff7f00;
+  color: #fff;
+}
+
+.special-instructions {
+  width: 100%;
+  height: 60px;
+}
+
+/* Payment */
+.payment {
+  padding: 50px;
+  max-width: 400px;
+  margin: auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-methods {
+  display: flex;
+  gap: 10px;
+}
+
+.payment-methods label {
+  cursor: pointer;
+}
+
+.pay-btn {
+  background: #ff7f00;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  border: none;
+}
+
+/* Delivery */
+.delivery {
+  padding: 50px;
+  max-width: 400px;
+  margin: auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .form-container {
+    flex-direction: column;
+  }
+
+  .product-detail {
+    flex-direction: column;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .icons {
+    flex-direction: column;
+  }
+
+  .delivery-pickup {
+    flex-direction: column;
+  }
+
+  .payment-methods {
+    flex-direction: column;
+  }
+}
